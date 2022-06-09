@@ -1,0 +1,27 @@
+eb:
+  api_url: 'https://eu-api.empathicbuilding.com/v1/pusher/auth'
+  access_token: '8f6b0984-dd08-4d35-8d3e-34aa12ceb848' 
+  asset_api_url: 'https://eu-api.empathicbuilding.com/v1/organizations/161/locations/208/assets'
+  
+pusher:
+  channel: 'private-location-208'
+  key: '33d6c4f799c274f7e0bc'
+  cluster: 'eu'
+
+logging:
+  version: 1
+  disable_existing_loggers: False
+  formatters:
+    default:
+      format: '[%(asctime)s  %(levelname)s] %(message)s'
+
+  handlers:
+    console:
+      class: logging.StreamHandler
+      formatter: default
+  root:
+    level: INFO
+    handlers: [console]
+  loggers:
+    __main__:
+      level: INFO
